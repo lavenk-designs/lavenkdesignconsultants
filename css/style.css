@@ -1969,8 +1969,9 @@ ol {
 		height: auto;
 	}
 	.hero-slider .hero-slide-item {
-		padding: 150px 0;
-		height: auto;
+		/*margin-top: 150px;*/
+		padding: 150px 0px 0px 0px;
+		height: 600px;
 	}
 	.slide-content h2 {
 		font-size: 60px;
