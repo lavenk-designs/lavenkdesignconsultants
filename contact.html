@@ -35,15 +35,15 @@
 	<!-- Header section start -->   
 	<header class="header-area">
 		<a href="home.html" class="logo-area">
-			<img src="img/logo.png" alt="">
+			<img src="img/logo.jpg" alt="">
 		</a>
 		<div class="nav-switch">
 			<i class="fa fa-bars"></i>
 		</div>
-		<div class="phone-number">+675 334 567 223</div>
+		<div class="phone-number">+91 82950 12448</div>
 		<nav class="nav-menu">
 			<ul>
-				<li><a href="home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About us</a></li>
 				<li><a href="service.html">Services</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
@@ -71,27 +71,55 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 contact-info mb-5 mb-lg-0">
-					<p>Address: 1481 Creekside Lane Avila Beach, CA 93424 </p>
-					<p>Phone: +53 345 7953 32453</p>
-					<p>Email: yourmail@gmail.com</p>
+					<p>Address: 1st Cross, 4th M Block, Rajajinar, Bangalore - 560010</p>
+					<p>Phone: +91 82950 12448</p>
+					<p>Email: lavenk.designs@gmail.com</p>
 					<div class="cf-social">
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/Lavenk-Design-Consultants-101165148295732/"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/lavenk_design_consultants/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.linkedin.com/company/lavenk-design-consultants/"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-9">
-					<form class="contact-form">
-						<input type="text" placeholder="Enter your name">
-						<input type="text" placeholder="Enter your email address">
-						<textarea placeholder="Message ..."></textarea>
+					<!-- <form class="contact-form">
+						<div>
+							<label>name</label>
+							<input type="text" placeholder="Enter your name">
+						</div>
+						<div>
+							<label>email</label>
+							<input type="text" placeholder="Enter your email address">
+						</div>
+						<div>
+							<label>message</label>
+							<textarea placeholder="Message ..."></textarea>
+						</div>
 						<button class="site-btn sb-dark">Send</button>
+					</form> -->
+					<form name="submit-to-google-sheet" class="contact-form">
+						<input name="name" type="text" placeholder="Enter your name">
+					  <input name="email" type="email" placeholder="Enter your email address" required>
+					  <textarea name="message" placeholder="Message ..."></textarea>
+					  <button type="submit" class="site-btn sb-dark">Send</button>
 					</form>
+
+					<script>
+					  const scriptURL = 'https://script.google.com/macros/s/AKfycbyIqlSdyDvJ0yLPc6w3KLESMFV_kcIOsLZ8g9NMKVvlj1a3b_oe/exec'
+					  const form = document.forms['submit-to-google-sheet']
+
+					  form.addEventListener('submit', e => {
+					    e.preventDefault()
+					    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+					      // .then(response => console.log('Success!', response))
+					      // .catch(error => console.error('Error!', error.message))
+					      .then(response => alert("Thank you! We will get back to you as soon as possible."))
+					      .catch(error => alert('error.message'))
+					  })
+					</script>
 				</div>
 			</div>
 		</div>
-		<div class="map-area" id="map-canvas"></div>
+		<!-- <div class="map-area" id="map-canvas"></div> -->
 	</section>
 	<!-- Page section end -->
 
@@ -101,11 +129,9 @@
 	<footer class="footer-section">
 		<div class="footer-social">
 			<div class="social-links">
-				<a href="#"><i class="fa fa-pinterest"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/Lavenk-Design-Consultants-101165148295732/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/lavenk_design_consultants/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/company/lavenk-design-consultants/"><i class="fa fa-linkedin"></i></a>
 			</div>
 		</div>
 		<div class="container">
@@ -115,15 +141,15 @@
 						<div class="col-md-4">
 							<div class="footer-item">
 								<ul>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Services</a></li>
-									<li><a href="#">Portfolio</a></li>
-									<li><a href="#">Blog</a></li>
+									<li><a href="home.html">Home</a></li>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="service.html">Services</a></li>
+									<!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+									<!-- <li><a href="blog.html">Blog</a></li> -->
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<!-- <div class="col-md-4">
 							<div class="footer-item">
 								<ul>
 									<li><a href="#">Terms & Conditions</a></li>
@@ -144,7 +170,7 @@
 									<li><a href="#">FAQ</a></li>
 								</ul>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
