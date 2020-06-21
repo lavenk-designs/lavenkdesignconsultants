@@ -445,7 +445,7 @@ ol {
 	float: left;
 	display: inline-block;
 	background: #121212;
-	padding: 20px 60px 30px;
+	/*padding: 20px 60px 30px;*/
 }
 
 .phone-number {
