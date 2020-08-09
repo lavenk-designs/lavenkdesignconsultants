@@ -238,7 +238,7 @@ $(window).on('load', function() {
 		value: 0.75,
 		size: 195,
 		thickness: 20,
-		fill: "#baff00",
+		fill: "rgb(210, 105, 30)",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 	//Set progress circle 2
@@ -246,7 +246,7 @@ $(window).on('load', function() {
 		value: 0.83,
 		size: 195,
 		thickness: 20,
-		fill: "#baff00",
+		fill: "rgb(210, 105, 30)",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 	//Set progress circle 3
@@ -254,7 +254,7 @@ $(window).on('load', function() {
 		value: 0.25,
 		size: 195,
 		thickness: 20,
-		fill: "#baff00",
+		fill: "rgb(210, 105, 30)",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 	//Set progress circle 4
@@ -262,7 +262,7 @@ $(window).on('load', function() {
 		value: 0.95,
 		size: 195,
 		thickness: 20,
-		fill: "#baff00",
+		fill: "rgb(210, 105, 30)",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 
